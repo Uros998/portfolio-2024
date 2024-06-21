@@ -1,1 +1,74 @@
 @import "../../../public/styles/gloval-style.scss";
+
+
+.main-content-wrapper {
+  z-index: 99;
+  width: 100%;
+
+  .mein-info-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .main-title-wrapper {
+      width: 70%;
+      margin-top: 5rem;
+
+      .text-container {
+        position: relative;
+        display: inline-block;
+
+        .fixed-first-text {
+          position: absolute;
+          top: -6rem;
+          right: 10rem;
+          transform: translate(100%, 0);
+          white-space: nowrap;
+          font-size: 5rem;
+        }
+
+        .fixed-second-text {
+          position: absolute;
+          top: 0;
+          left: -4rem;
+          transform: translate(0, 0);
+          white-space: nowrap;
+          font-size: 8rem;
+        }
+
+        .fixed-third-text {
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: translate(100%, 0);
+          white-space: nowrap;
+          font-size: 8rem;
+        }
+      }
+    }
+
+    .main-text-wrapper {
+      width: 30%;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        justify-content: left;
+        align-items: end;
+
+        .text-wrapper {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          width: 70%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
